@@ -1,0 +1,14 @@
+# recommended by brew doctor
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+
+# load rbenv
+eval "$(rbenv init -)"
+
+# Add rbenv to path
+export PATH=$(rbenv root)/shims:$(rbenv root)/bin:$PATH
+
+# Add direnv
+# eval "$(direnv hook zsh)"
+
+# Tmuxinator
+source ~/.bin/tmuxinator.zsh
